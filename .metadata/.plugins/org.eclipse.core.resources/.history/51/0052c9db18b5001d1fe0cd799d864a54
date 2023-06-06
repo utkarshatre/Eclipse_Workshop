@@ -1,0 +1,48 @@
+package com;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+class Person {
+	public static void main(String[] args) {
+		ArrayList<Integer> l = new ArrayList<Integer>();
+	l.add(1);
+	l.add(3);
+	l.add(2);
+	Collections.sort(l);
+	System.out.println(l);
+	
+	}
+}
+
+
+
+//interface Demo{
+////	public void mess();
+////  public static void call() {
+////		System.out.println("cll the inspector");
+////	}
+////	public default void arrest() {
+////		System.out.println("arrest owner");
+////	}
+////}
+////	class DemoImp implements Demo{
+////		@Override
+////		public void mess() {
+////			System.out.println("FOOD IS NOT GOOD");
+////		}
+////		@Override
+////		public void arrest() {
+////			System.out.println("ARREST OWNER");
+////		}
+////	}
+////public class Practice{
+////	public static void main(String[] args) {
+////	    DemoImp d= new DemoImp();
+////		d.mess();
+////		d.arrest();
+////		Demo.c
+////		
+////		
+////		all();	
+//	}
+//}

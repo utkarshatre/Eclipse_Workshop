@@ -1,0 +1,18 @@
+package com;
+public class Practice extends Thread{
+public static void main(String[] args) {
+	for(int i =0; i<=10; i++) {
+		System.out.println(i);
+
+	try {
+
+		sleep(100);
+		throw new InterruptedException();
+	}
+	catch(Exception e)
+	{
+		e.printStackTrace() ;
+	}
+	}
+}
+}

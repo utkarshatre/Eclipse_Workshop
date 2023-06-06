@@ -1,0 +1,33 @@
+package solid_principal;
+interface Java {
+	void core();
+}
+interface Sql{
+	void rdbms();
+}
+interface WebTech{
+	void htmlCssJs();
+}
+class FullStack implements Java, Sql, WebTech{
+
+	@Override
+	public void core() {
+		
+	}
+
+	@Override
+	public void rdbms() {
+		
+	}
+
+	
+	@Override
+	public void htmlCssJs() {
+		
+	}
+
+}
+
+public class Interface_Segerration_Principal {
+
+}

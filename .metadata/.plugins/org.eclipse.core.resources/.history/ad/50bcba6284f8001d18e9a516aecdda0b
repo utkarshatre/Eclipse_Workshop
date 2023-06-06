@@ -1,0 +1,15 @@
+package com;
+
+public class Try {
+	
+	   public static void main(String args[]){
+          
+           String one ="abcd";
+           String two ="abc";
+           String three=one.substring(0,one.length());
+           System.out.println(one==three);
+           System.out.println(one.substring(0,one.length()+2));
+         
+          
+    }
+}

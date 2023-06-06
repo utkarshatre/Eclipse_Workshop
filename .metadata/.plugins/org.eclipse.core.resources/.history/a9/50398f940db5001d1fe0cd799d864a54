@@ -1,0 +1,45 @@
+package com;
+import java.util.*;
+class Person{
+	public static void main(String[] args) {
+		ArrayList<Integer> l = new ArrayList<Integer>();
+		l.add(21);
+		l.add(21);
+		System.out.println(l.size());
+		l.add(32);
+		System.out.println(l);
+	}
+}
+
+
+
+//interface Demo{
+////	public void mess();
+////  public static void call() {
+////		System.out.println("cll the inspector");
+////	}
+////	public default void arrest() {
+////		System.out.println("arrest owner");
+////	}
+////}
+////	class DemoImp implements Demo{
+////		@Override
+////		public void mess() {
+////			System.out.println("FOOD IS NOT GOOD");
+////		}
+////		@Override
+////		public void arrest() {
+////			System.out.println("ARREST OWNER");
+////		}
+////	}
+////public class Practice{
+////	public static void main(String[] args) {
+////	    DemoImp d= new DemoImp();
+////		d.mess();
+////		d.arrest();
+////		Demo.c
+////		
+////		
+////		all();	
+//	}
+//}

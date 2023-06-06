@@ -1,0 +1,31 @@
+package com;
+
+public class Beanclass {
+	String name;
+	String id;
+	int year;
+	Beanclass(String name, String id, int year){
+		this.name=name;
+		this.id=id;
+		this.year=year;
+	}
+	public void setName() {
+		this.name=name;
+	}
+	public String getName(String name) {
+		return name;
+	}
+	public void setID() {
+		this.id=id;
+	}
+	public String GetId(String id) {
+		return id;
+	}
+	public void setYear(int year) {
+		this.year=year;
+	}
+	public int getYear() {
+		return year;
+	}
+	
+}

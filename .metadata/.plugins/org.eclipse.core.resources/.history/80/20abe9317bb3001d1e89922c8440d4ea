@@ -1,0 +1,21 @@
+package com;
+class Car extends Exception{
+	String msg;
+	public Car(String msg) {
+		this.msg = msg;
+	}
+	public void output() throws Car{
+		throw new Car("waste car");
+	}
+}
+public class Practice{
+	public static void main(String[] args) {
+		try{
+			Car c = new Car("a");
+			c.output();
+		}
+		catch(Car e) {
+			e.printStackTrace();
+		}
+	}
+}

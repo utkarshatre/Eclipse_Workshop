@@ -1,0 +1,37 @@
+package solid_principal;
+interface MusicPlayer{
+	void audio();
+	void video();
+	void audioVideo();
+}
+class Mp3 implements MusicPlayer{
+	@Override
+	default void audio() {
+		
+		System.out.println("Mp3 only");
+	}
+}
+interface Mp4 extends MusicPlayer{
+	@Override
+	default void video() {
+		System.out.println("Mp4 only");
+	}
+}
+interface Mp3Mp4 extends MusicPlayer{
+	@Override
+	default void audio() {
+		System.out.println("Mp3");
+	}
+	@Override
+	default void video() {
+		System.out.println("Mp4");
+	}
+	@Override
+	default void audioVideo() {
+		System.out.println("Mp3 and Mp4");
+	}
+}
+public class LouskySubstitution {
+MusicPlayer m1 = new Mp3();
+
+}

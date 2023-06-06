@@ -1,0 +1,24 @@
+Anonymous inner function
+-----------------------
+a class without any name
+anonymonus inner clas  is generally used with abstract class 
+and interface
+
+syntax :
+		Classname ref.name = new Classname(){
+		
+			};
+*****************************************************************
+
+LAmbda Expression
+--------------------
+1) Lembda expression is a small block of code which is used to 
+    implement functional interface
+2) marker interface is an empty interface without any
+   abstract method
+3) Functional interface is a interface with only one interface method
+
+Syntax:
+		Interfacename refname = (arguments) -> {
+		//Override abstract method -> only impollementation 
+		};

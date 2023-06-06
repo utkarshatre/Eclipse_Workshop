@@ -1,0 +1,61 @@
+package sdbms;
+
+import java.util.Scanner;
+
+public class Solution {
+	public static void main(String[] args) {
+		System.out.println("welcomme to student database management system");
+		System.out.println("================================================");
+		Scanner ip = new Scanner(System.in);
+		StudentManagementSystem sms = new StudentManagementSystemImpl();
+		while(true) {
+			System.out.println("1:Add Student\n2:displayStudent");
+			System.out.println("3:displayAllStudent\n4:removeStudent");
+			System.out.println("5:removeAllStudent\n6:countStudent");
+			System.out.println("7:sortStudent\n8:getStudentWithHighestMarks");
+			System.out.println("9:getStudentWithLowestMarks\n10:");
+			int choice=ip.nextInt();
+			switch(choice) {
+			case 1:
+				
+			case 2: 
+				sms.addStudent();
+				break;
+			case 3:
+				sms.displayStudent();
+				break;
+			case 4:
+				sms.displayAllStudent();
+			case 5:
+				sms.removeStudent();
+			case 6:
+				sms.removeAllStudent();
+			case 7:
+				sms.countStudent();
+			case 8:
+				sms.sortStudent();
+			case 9:
+				sms.getStudentWithHighestMarks();
+			case 10:
+				sms.getStudentWithLowestMarks();
+			case 11:
+				System.out.println("Thankyou");
+				System.exit(0);
+			default:
+				//custom exception
+				try {
+					String msg="Invalid choice !kindly enter valid choice";
+				}
+				catch(Exception e){
+					System.out.println(e.getMessage());
+				}
+			}
+			System.out.println("_-----------------------------------------------------_");
+		}
+
+		//Scanner
+		//SMS +SMSIMp
+		//infinte loop
+		// menu driven program 
+	}
+}

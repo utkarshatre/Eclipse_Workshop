@@ -1,0 +1,50 @@
+package array;
+
+import java.util.Stack;
+
+public class sumofele {
+
+	public static void main(String[] args) {
+		int n=5;
+		for(int i=1; i<=n;i++) {
+			for(int j=n-1;j>=i;j--) {
+				System.out.print(" "); 
+			}
+			for(int k=1;k<=i;k++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
+
+//	//isogrram
+//	
+//	
+	int n1=11;
+	for(int i =1; i<=n1; i++) {
+		for(int j =1; j<=n1; j++) {
+			if(i+j<=n1+1) 
+			if(i<=j)
+			{
+				System.out.print("* ");
+			}
+			else
+			{
+				System.out.print(" ");
+			}
+		}
+		System.out.println();
+		
+	}
+	for(int i =1; i<=5; i++) {
+		for(int j =1; j<=5; j++) {
+			if(i+j<=5+1) 
+			//if(i<=j)
+			{
+				System.out.print("* ");
+			
+			}
+		}
+	}
+	}
+}

@@ -1,0 +1,51 @@
+package com;
+class Task{
+	public void task() {
+		for(int i =0; i<=5; i++)
+		{
+			System.out.println(i);
+		}
+	}
+}
+class Practice extends Task implements Runnable{
+	@Override
+	public void run() {
+		for(int i =5; i<=10; i++)
+		{
+			System.out.println(i);
+			i+=i;
+		}
+	}
+
+	public static void main(String[] args) {
+		Practice p = new Practice();
+		Thread t = new Thread(p);
+		t.start();
+	}
+}
+
+//class Task{
+//	public void task1() {
+//		for(int i =0;i<=5;i++)
+//		{
+//			System.out.println(i);
+//		}
+//	}
+//	public void task2() {
+//		for(int i =6
+//				
+//				
+//				;i<=10;i++)
+//		{
+//			System.out.println(i);
+//		}
+//	}
+//}
+//
+//public class Practice{
+//	public static void main(String[] args) {
+//		Task t = new Task();
+//		t.task1();
+//		t.task2();
+//		}
+//}

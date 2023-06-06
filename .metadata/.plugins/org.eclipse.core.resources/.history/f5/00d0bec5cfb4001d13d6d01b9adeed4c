@@ -1,0 +1,231 @@
+package com;
+import java.util.*;
+
+
+
+//class Bike{
+//	int tyre;
+//	Bike(int tyre){
+//		this.tyre= tyre;
+//	}
+//	public void checked() {
+//		if(tyre == 2) {
+//			System.out.println(tyre+ " tyre only supports bike");
+//		}
+//		else {
+//			try {
+//				throw new CE(tyre+" tyre not supported bike");
+//			}
+//			catch(Exception e) {
+//				System.out.println(e.getMessage());
+//			}
+//		}
+//	}
+//	public static void main(String[] args) {
+//		Bike b = new Bike(2);
+//		b.checked();
+//		}
+//	}
+//class CE extends Exception{
+//	private String m;
+//	CE(String m)
+//	{
+//		this.m= m;
+//	}
+//	@Override
+//	public String getMessage() {
+//		return m;
+//	}
+//}
+
+
+//class CE extends Exception{
+//	private String message;
+//	CE(String message){
+//		this.message = message;
+//	}
+//	@Override
+//	public String getMessage() {
+//		return message;
+//	}
+//}
+//class Car{
+//	String name;
+//	Car(String name){
+//		this.name = name;
+//	}
+//	public void checked() {
+//		if(name == "Tata") {
+//			System.out.println("its a safest car");
+//		}
+//		else {
+//			try {
+//			throw new CE(name);
+//			}
+//			catch (Exception e) {
+//				System.out.println("its a safest joke");
+//			}
+//		}
+//	}
+//	public static void main(String[] args) {
+//		Car c = new Car("TaTa");
+//		c.checked();
+//	}
+//}
+//
+
+
+//class Task{
+//	public void task1() {
+//		for(int i =0; i<=5; i++) {
+//			System.out.println(i);
+//		}
+//	}
+//	public void task2() {
+//		for(int i =6;  i<=10; i++) {
+//			System.out.println(i);
+//		}
+//	}
+//}
+//class Thread1 extends Thread{
+//	Task a;
+//	Thread1(Task a){
+//		this.a =a;
+//	}
+//	@Override
+//	public void run() {
+//		synchronized(a) {
+//			a.task1();
+//		}
+//	}
+//}
+//class Thread2 extends Thread{
+//	Task b; 
+//	Thread2(Task b){
+//		this.b =b;
+//	}
+//	@Override
+//	public void run() {
+//		synchronized(b) {
+//			b.task2();
+//		}
+//	}
+//}
+//class Practice{
+//	public static void main(String[] args) {
+//		Task t = new Task();
+//		Thread1 a = new Thread1(t);
+//		Thread2 b = new Thread2(t);
+//		a.start();
+//		b.start();
+//	}
+//}
+//		
+//		
+////class Task{
+////	synchronized  public void task1() {
+////		for(int i =0; i<=5; i++) {
+////			System.out.println(i);
+////		}
+//	}
+//	synchronized public void task2() {
+//		for(int i =6; i<=10; i++) {
+//			System.out.println(i);
+//			}
+//		}
+//	}
+//class Thread1 extends Thread{
+//	Task a;
+//	Thread1(Task a){
+//		this.a = a;
+//	}
+//	@Override
+//	public void run() {
+//		a.task1();
+//	}
+//}
+//class Thread2 extends Thread{
+//	Task b;
+//	Thread2(Task b){
+//		this.b = b;
+//	}
+//	@Override
+//	public void run() {
+//		b.task2();
+//	}
+//}
+//public class Practice{
+//	public static void main(String[] args) {
+//		Task t = new Task();
+//		Thread1 t1 = new Thread1(t);
+//		Thread2 t2 = new Thread2(t);
+//		t1.start();
+//		t2.start();
+//	}
+//}		
+		
+		
+		
+		
+		
+		
+		
+		//		Set<String> s= new HashSet<String>();
+//		s.add("java");
+//		s.add("sql");
+//		s.add("spring");
+//		s.add("hibernate");
+//		s.add("web");
+//		
+//		System.out.println(s
+//				
+//				);
+//	}
+//}
+//	String s1;
+//	String s2;
+//	Person(String s1,String s2){
+//		this.s1=s1;
+//		this.s2=s2;
+//	}
+//	@Override
+//	public boolean equals(Object o) {
+//		return s1==s1;
+//	}
+//}
+//public class Practice{
+//	public static void main(String[] args) {
+//		Person p = new Person("hii","hii");
+//	System.out.println(p.s1.equals(p.s2));
+//	}
+//}
+//interface Demo{
+////	public void mess();
+////  public static void call() {
+////		System.out.println("cll the inspector");
+////	}
+////	public default void arrest() {
+////		System.out.println("arrest owner");
+////	}
+////}
+////	class DemoImp implements Demo{
+////		@Override
+////		public void mess() {
+////			System.out.println("FOOD IS NOT GOOD");
+////		}
+////		@Override
+////		public void arrest() {
+////			System.out.println("ARREST OWNER");
+////		}
+////	}
+////public class Practice{
+////	public static void main(String[] args) {
+////	    DemoImp d= new DemoImp();
+////		d.mess();
+////		d.arrest();
+////		Demo.c
+////		
+////		
+////		all();	
+//	}
+//}

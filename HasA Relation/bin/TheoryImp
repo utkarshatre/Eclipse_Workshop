@@ -1,0 +1,28 @@
+Explain system.out.println
+and predefine 
+System class HAsA static variable ref. = out of type PrintStream
+using the ref var = out we can access the nonsttsic methods
+of PrintStrem class
+
+Explanantion
+class System{
+	static PrintStream out = new PritStream();
+}
+class PrintStream {
+	void print() {
+		
+	}
+	void println() {
+		
+	}
+}
+
+
+Prdefined MEthodOverloading
+print and println method are predefined example for methodoverloading
+
+Predefined MEthodOverriding
+1)toString method, 2)hashcode method,3) equals methods of "String class" is predefined overriding
+
+
+bit.ly/java_interview_questions

@@ -1,0 +1,44 @@
+package com;
+
+import java.util.TreeSet;
+
+public class Beanclass {
+	String name;
+	String id;
+	int year;
+	Beanclass(String name, String id, int year){
+		this.name=name;
+		this.id=id;
+		this.year=year;
+	}
+	public void setName() {
+		this.name=name;
+	}
+	public String getName(String name) {
+		return name;
+	}
+	public void setID() {
+		this.id=id;
+	}
+	public String GetId(String id) {
+		return id;
+	}
+	public void setYear(int year) {
+		this.year=year;
+	}
+	public int getYear() {
+		return year;
+	}
+	public static void main(String[] args) {
+		Beanclass b1=new Beanclass("a","1",1998);
+		Beanclass b2=new Beanclass("b","3",1998);
+		Beanclass b3=new Beanclass("c","2",1998);
+		TreeSet<Beanclass> t = new TreeSet<Beanclass>();
+		t.add(b1);
+		t.add(b2);
+		t.add(b3);
+		for(Beanclass a :t) {
+			System.out.println(a);
+		}
+		}
+}
